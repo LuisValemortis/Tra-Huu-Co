@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Trà Hữu Cơ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">TRÀ HỮU CƠ</div>
+            <nav class="main-nav">
+                <a href="index.html">Trang Chủ</a>
+                <a href="about.html">Giới Thiệu</a>
+                <a href="products.html">Sản Phẩm</a>
+                <a href="news.html">Tin Tức</a>
+                <a href="contact.html">Liên Hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-form-section">
+        <h2 style="text-align: center; color: var(--color-primary);">Gửi Yêu Cầu Tư Vấn</h2>
+        <form id="contactForm">
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="phone">Điện thoại (Tùy chọn):</label>
+            <input type="text" id="phone">
+
+            <label for="message">Nội dung:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Gửi Liên Hệ</button>
+            
+            <p id="validationMessage" class="message-area"></p>
+        </form>
+    </section>
+
+    <section class="section" style="padding-top: 0; text-align: left;">
+        <div class="container">
+            <h3 style="color: var(--color-secondary);">Thông Tin Liên Lạc</h3>
+            <p><strong>Điện thoại:</strong> 0978 979 153</p>
+            <p><strong>Email:</strong> dodinhphi@example.com</p>
+            <p><strong>Địa chỉ:</strong> Khu Phố A, Phường B, Thành phố C, Việt Nam</p>
+            
+            <h3 style="margin-top: 30px; color: var(--color-secondary);">Vị Trí Cửa Hàng</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15668.647970868843!2d106.66673515!3d10.760156099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1e29206b05%3A0xc3f982173f2468e6!2sThành%20phố%20Hồ%20Chí%20Minh!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Đỗ Đình Phi - Tiểu luận Website Trà Hữu Cơ</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
