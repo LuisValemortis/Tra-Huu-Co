@@ -9,18 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
-            // Ngăn chặn form gửi đi
             event.preventDefault(); 
 
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const message = document.getElementById('message').value.trim();
             
-            // Reset thông báo
             validationMessage.textContent = '';
             validationMessage.style.color = 'red';
 
-            // Bắt đầu Validation
             if (name === '' || name.length < 3) {
                 validationMessage.textContent = 'Vui lòng nhập Họ và Tên (ít nhất 3 ký tự).';
                 return;
@@ -41,10 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Nếu tất cả hợp lệ:
             validationMessage.style.color = 'green';
             validationMessage.textContent = 'Cảm ơn bạn, thông tin liên hệ đã được gửi thành công!';
-            // contactForm.reset(); // Có thể uncomment để xóa form sau khi gửi
         });
     }
 });
